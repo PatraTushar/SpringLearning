@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- your beans go here -->
+
+
+    <bean id="order1" class="org.Example5.OrderInformation">
+
+        <property name="orderID" value="12345"></property>
+        <property name="productNames">
+
+            <list>
+                <value>iphone15</value>
+                <value>Samsung</value>
+                <value>Motorola</value>
+                <value>Nokia</value>
+                <value>iphone17</value>
+            </list>
+
+        </property>
+
+        <property name="releaseYears">
+
+            <list>
+                <value>2011</value>
+                <value>2012</value>
+                <value>2013</value>
+                <value>2014</value>
+                <value>2015</value>
+            </list>
+
+        </property>
+
+
+    </bean>
+
+
+    <bean id="order2" class="org.Example5.OrderInformation">
+
+        <property name="orderID" value="56743"> </property>
+
+        <property name="emailIDS">
+
+            <set>
+
+                <value>tushar@gmail.com</value>
+                <value>rohan@gmail.com</value>
+                <value>virat@gmail.com</value>
+                <value>hardik@gmail.com</value>
+
+            </set>
+        </property>
+
+        <property name="productAndPrices">
+
+            <map>
+
+                <entry key="IQ00" value="50000"> </entry>
+                <entry key="IPHONE 17 PRO MAX" value="150000"> </entry>
+                <entry key="OPPO" value="35000"> </entry>
+                <entry key="NOTHING" value="78000"> </entry>
+
+            </map>
+
+        </property>
+
+
+    </bean>
+
+
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- your beans go here -->
+
+
+    <!-- Example3 package in intellij -->
+
+    <bean id="employee" class="org.Example3.Employee">
+
+        <property name="empID" value="121"/>
+
+        <property name="companyName" value="Deloitte"/>
+
+    </bean>
+
+</beans>

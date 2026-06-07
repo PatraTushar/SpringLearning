@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- your beans go here -->
+
+    <!-- Example2 package in intellij -->
+
+    <bean id="javaCourse" class="org.Example2.Course">
+        <property name="courseName" value="Java Full Stack"/>
+    </bean>
+
+    <bean id="student1" class="org.Example2.Student">
+
+        <property name="name" value="Tushar"/>
+
+        <property name="course" ref="javaCourse"/>
+
+    </bean>
+
+</beans>

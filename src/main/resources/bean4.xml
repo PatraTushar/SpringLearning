@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- your beans go here -->
+
+    <bean id="product1" class="org.Example4.ProductInformation">
+
+        <property name="productID" value="1000"> </property>
+        <property name="productName" value="iphone 16"> </property>
+        <property name="price" value="100000"> </property>
+        <property name="isExpired" value="false"> </property>
+    </bean>
+
+
+
+    <bean id="product2" class="org.Example4.ProductInformation">
+
+        <property name="productID" value="2000"> </property>
+        <property name="productName" value="Samsung"> </property>
+        <property name="price" value="300000"> </property>
+        <property name="isExpired" value="false"> </property>
+    </bean>
+
+
+</beans>
