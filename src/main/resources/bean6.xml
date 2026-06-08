@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- your beans go here -->
+
+
+    <!-- Address Bean configuration -->
+
+    <bean id="office" class="org.Example6.Address">
+
+        
+        <property name="pinCode" value="50072"> </property>
+        <property name="city" value="Hyderabad"> </property>
+        <property name="country" value="India"> </property>
+
+    </bean>
+
+
+    <!-- Employee Bean configuration -->
+
+    <bean id="emp" class="org.Example6.Employee">
+
+        <property name="name" value="Hardik"> </property>
+        <property name="id" value="501"> </property>
+        <property name="salary" value="500000"> </property>
+        <property name="address" ref="office"> </property>
+
+
+
+    </bean>
+
+</beans>
