@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- your beans go here -->
+
+    <bean id="cart1" class="org.Example8.cartItems"></bean>
+
+    <bean id="cart2" class="org.Example8.cartItems">
+
+        <constructor-arg value="Electronics"></constructor-arg>
+        <constructor-arg>
+
+            <list>
+
+                <value>Laptop</value>
+                <value>Iphone</value>
+                <value>TV</value>
+                <value>Washing Machine</value>
+            </list>
+
+        </constructor-arg>
+
+
+        <constructor-arg>
+            <map>
+
+                <entry key="Refrigerator" value="345623.86"></entry>
+                <entry key="AC" value="50000.32"></entry>
+                <entry key="Computer" value="43000.45"></entry>
+                <entry key="Table" value="78996.54"></entry>
+            </map>
+        </constructor-arg>
+
+        <constructor-arg ref="product1"></constructor-arg>
+
+
+    </bean>
+
+
+    <bean id="order1" class="org.Example8.Order">
+
+        <constructor-arg value="Tushar@gmail.com"></constructor-arg>
+        <constructor-arg ref="cart2"></constructor-arg>
+    </bean>
+
+    <bean id="product1" class="org.Example8.Product">
+        
+        <property name="id" value="888"></property>
+        <property name="name" value="PC"></property>
+        <property name="price" value="85000"></property>
+    </bean>
+
+
+</beans>
