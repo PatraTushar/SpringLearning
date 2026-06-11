@@ -1,0 +1,17 @@
+package org.Example11;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+
+    public static void main(String[] args) {
+
+        ApplicationContext container=new ClassPathXmlApplicationContext("bean11.xml");
+
+        Hospital h=(Hospital) container.getBean("H1");
+        System.out.println(h);
+        System.out.println(h.getPatient());
+
+    }
+}
