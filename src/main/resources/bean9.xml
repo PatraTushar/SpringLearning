@@ -8,26 +8,26 @@
 
     <!-- your beans go here -->
 
-    <bean id="product" class="org.Example9.Product">
+    <bean id="product" class="springUsingXML.Example9.Product">
 
         <constructor-arg value="111"></constructor-arg>
         <constructor-arg value="iphone16"></constructor-arg>
         <constructor-arg value="100000"></constructor-arg>
     </bean>
 
-    <bean id="product2" class="org.Example9.Product">
+    <bean id="product2" class="springUsingXML.Example9.Product">
 
         <constructor-arg value="222"></constructor-arg>
         <constructor-arg value="iphone17"></constructor-arg>
         <constructor-arg value="200000"></constructor-arg>
     </bean>
 
-    <bean id="info" class="org.Example9.Information">
+    <bean id="info" class="springUsingXML.Example9.Information">
 
     </bean>
 
 
-    <bean id="cart1" class="org.Example9.Cart" autowire="byName"> </bean>
+    <bean id="cart1" class="springUsingXML.Example9.Cart" autowire="byName"> </bean>
 
-    <bean id="order" class="org.Example9.Order" autowire="byName"> </bean>
+    <bean id="order" class="springUsingXML.Example9.Order" autowire="byName"> </bean>
 </beans>

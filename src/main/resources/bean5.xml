@@ -9,7 +9,7 @@
     <!-- your beans go here -->
 
 
-    <bean id="order1" class="org.Example5.OrderInformation">
+    <bean id="order1" class="springUsingXML.Example5.OrderInformation">
 
         <property name="orderID" value="12345"></property>
         <property name="productNames">
@@ -40,7 +40,7 @@
     </bean>
 
 
-    <bean id="order2" class="org.Example5.OrderInformation">
+    <bean id="order2" class="springUsingXML.Example5.OrderInformation">
 
         <property name="orderID" value="56743"> </property>
 

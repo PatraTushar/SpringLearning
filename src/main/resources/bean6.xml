@@ -11,7 +11,7 @@
 
     <!-- Address Bean configuration -->
 
-    <bean id="office" class="org.Example6.Address">
+    <bean id="office" class="springUsingXML.Example6.Address">
 
         
         <property name="pinCode" value="50072"> </property>
@@ -23,7 +23,7 @@
 
     <!-- Employee Bean configuration -->
 
-    <bean id="emp" class="org.Example6.Employee">
+    <bean id="emp" class="springUsingXML.Example6.Employee">
 
         <property name="name" value="Hardik"> </property>
         <property name="id" value="501"> </property>

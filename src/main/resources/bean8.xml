@@ -8,9 +8,9 @@
 
     <!-- your beans go here -->
 
-    <bean id="cart1" class="org.Example8.cartItems"></bean>
+    <bean id="cart1" class="springUsingXML.Example8.cartItems"></bean>
 
-    <bean id="cart2" class="org.Example8.cartItems">
+    <bean id="cart2" class="springUsingXML.Example8.cartItems">
 
         <constructor-arg value="Electronics"></constructor-arg>
         <constructor-arg>
@@ -42,13 +42,13 @@
     </bean>
 
 
-    <bean id="order1" class="org.Example8.Order">
+    <bean id="order1" class="springUsingXML.Example8.Order">
 
         <constructor-arg value="Tushar@gmail.com"></constructor-arg>
         <constructor-arg ref="cart2"></constructor-arg>
     </bean>
 
-    <bean id="product1" class="org.Example8.Product">
+    <bean id="product1" class="springUsingXML.Example8.Product">
         
         <property name="id" value="888"></property>
         <property name="name" value="PC"></property>

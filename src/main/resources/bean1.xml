@@ -11,10 +11,10 @@
     <!-- Example1 package in intellij -->
 
     <!-- Creating Engine object -->
-    <bean id="engine" class="org.Example1.Engine"/>
+    <bean id="engine" class="springUsingXML.Example1.Engine"/>
 
     <!-- Creating Car object and injecting Engine -->
-    <bean id="car" class="org.Example1.Car">
+    <bean id="car" class="springUsingXML.Example1.Car">
         <property name="engine" ref="engine"/>
     </bean>
 

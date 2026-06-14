@@ -8,7 +8,7 @@
 
     <!-- your beans go here -->
 
-    <bean id="product1" class="org.Example4.ProductInformation">
+    <bean id="product1" class="springUsingXML.Example4.ProductInformation">
 
         <property name="productID" value="1000"> </property>
         <property name="productName" value="iphone 16"> </property>
@@ -18,7 +18,7 @@
 
 
 
-    <bean id="product2" class="org.Example4.ProductInformation">
+    <bean id="product2" class="springUsingXML.Example4.ProductInformation">
 
         <property name="productID" value="2000"> </property>
         <property name="productName" value="Samsung"> </property>

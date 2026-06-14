@@ -11,7 +11,7 @@
 
     <!-- Example3 package in intellij -->
 
-    <bean id="employee" class="org.Example3.Employee">
+    <bean id="employee" class="springUsingXML.Example3.Employee">
 
         <property name="empID" value="121"/>
 

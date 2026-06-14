@@ -9,11 +9,11 @@
     <!-- your beans go here -->
 
 
-    <bean id="college" class="org.Example10.College" autowire="byType"> </bean>
+    <bean id="college" class="springUsingXML.Example10.College" autowire="byType"> </bean>
 
-    <bean id="s1" class="org.Example10.Student"> </bean>
+    <bean id="s1" class="springUsingXML.Example10.Student"> </bean>
 
- <!--  <bean id="s2" class="org.Example10.Student"> </bean>  -->
+ <!--  <bean id="s2" class="Example10.springUsingXML.Student"> </bean>  -->
 
 
 

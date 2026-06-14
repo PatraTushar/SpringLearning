@@ -10,11 +10,11 @@
 
     <!-- Example2 package in intellij -->
 
-    <bean id="javaCourse" class="org.Example2.Course">
+    <bean id="javaCourse" class="springUsingXML.Example2.Course">
         <property name="courseName" value="Java Full Stack"/>
     </bean>
 
-    <bean id="student1" class="org.Example2.Student">
+    <bean id="student1" class="springUsingXML.Example2.Student">
 
         <property name="name" value="Tushar"/>
 
