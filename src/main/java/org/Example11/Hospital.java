@@ -7,9 +7,9 @@ public class Hospital {
 
     Doctor doctor;
 
-    public Hospital(Patient patient){
+    public Hospital(Patient patient3){
 
-        this.patient=patient;
+        this.patient =patient3;
 
     }
     public String getName() {

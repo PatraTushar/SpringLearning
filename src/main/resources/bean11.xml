@@ -9,9 +9,10 @@
     <!-- your beans go here -->
 
     <bean id="patient1" class="org.Example11.Patient"> </bean>
+   <!-- <bean id="patient2" class="org.Example11.Patient"> </bean>-->
+   <!-- <bean id="patient3" class="org.Example11.Patient"> </bean>-->
+
     <bean id="H1" class="org.Example11.Hospital" autowire="constructor"> </bean>
 
 
-
-
-    </beans>
+</beans>
