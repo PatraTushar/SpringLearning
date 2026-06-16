@@ -24,6 +24,16 @@ public class MainApp {
         System.out.println(clg2.getCollegeName());
         System.out.println(clg2.getCount());
 
+
+        College clg3=(College) container.getBean("getCollege3");
+        System.out.println(clg3.getCollegeName());
+        System.out.println(clg3.getCount());
+
+
+        Student s2=(Student) container.getBean("stud");
+        System.out.println(s2.getName());
+        System.out.println(s2.getId());
+        System.out.println(s2.getMarks());
     }
 
 

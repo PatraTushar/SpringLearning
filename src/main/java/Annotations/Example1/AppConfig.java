@@ -18,17 +18,18 @@ public class AppConfig {
     }
 
     @Bean("college1")
-    public College getCollege(){
+    public College getCollege() {
 
+        System.out.println(" This is getCollege method ");
         return new College();
     }
 
 
     @Bean("college2")
-    public College getCollege2(){
+    public College getCollege2() {
 
-        College clg=new College();
-
+        System.out.println(" This is getCollege2 method ");
+        College clg = new College();
         clg.setCollegeName(" ABC college ");
         clg.setCount(500);
 
@@ -37,9 +38,42 @@ public class AppConfig {
     }
 
 
+    @Bean
+    public College getCollege3() {
+
+        System.out.println(" This is getCollege3 method ");
+        College clg = new College();
+        clg.setCollegeName(" XYZ college ");
+        clg.setCount(200);
+
+        return clg;
+
+    }
 
 
+    @Bean("stud")
+    public Student getStudent3(){
 
+        Student s1=new Student();
+        s1.setName("Rahul");
+        s1.setId(100);
+        s1.setMarks(89.2);
+
+        return s1;
+
+    }
+
+    @Bean("stud")
+    public Student getStudent4(){
+
+        Student s1=new Student();
+        s1.setName("Mohan");
+        s1.setId(300);
+        s1.setMarks(67.4);
+
+        return s1;
+
+    }
 
 
 
