@@ -11,5 +11,10 @@ public class MainApp {
 
        Address address=(Address) container.getBean("office");
        address.addressInfo();
+
+       Employee e1=(Employee) container.getBean("emp");
+        System.out.println(e1.getName());
+        System.out.println(e1.getSalary());
+        System.out.println(e1.getId());
     }
 }

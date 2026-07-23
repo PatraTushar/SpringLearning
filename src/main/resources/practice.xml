@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="p1" class="springUsingXML.Practice.OrderInfo">
+
+        <property name="orderID" value="201"></property>
+
+        <property name="orderNames">
+
+            <list>
+                <value>shirt</value>
+                <value>pant</value>
+                <value>ball</value>
+                <value>bat</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean id="p2" class="springUsingXML.Practice.OrderInfo">
+
+
+
+        <property name="emailIDS">
+
+            <set>
+
+                <value>ram@gmail.com</value>
+                <value>shyam@gmail.com</value>
+                <value>rinku@gmail.com</value>
+                <value>rupam@gmail.com</value>
+                <value>rupam@gmail.com</value>
+
+            </set>
+
+        </property>
+
+
+        <property name="productAndPrices">
+
+            <map>
+                <entry key="IPHONE16" value="100000"></entry>
+                <entry key="IPHONE17" value="200000"></entry>
+                <entry key="IPHONE14" value="10000"></entry>
+                <entry key="IPHONE13" value="20000"></entry>
+            </map>
+        </property>
+    </bean>
+
+
+
+
+
+
+
+
+    </beans>
